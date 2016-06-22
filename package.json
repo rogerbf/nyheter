@@ -1,0 +1,53 @@
+{
+  "name": "nyheter",
+  "version": "0.0.1",
+  "description": "Nyheter i terminalen",
+  "main": "./dist/index.js",
+  "bin": {
+    "nyheter": "./dist/bin/cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prebuild": "rimraf dist",
+    "build": "babel --out-dir dist src"
+  },
+  "author": "rogerbf <roger@bergfalk.nu> (http://bergfalk.nu/)",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "eslintConfig": {
+    "env": {
+      "node": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 6
+    }
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "6.10.1",
+    "babel-preset-es2015": "6.9.0",
+    "rimraf": "2.5.2"
+  },
+  "dependencies": {
+    "chalk": "1.1.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rogerbf/nyheter.git"
+  },
+  "keywords": [
+    "nyheter",
+    "news"
+  ],
+  "bugs": {
+    "url": "https://github.com/rogerbf/nyheter/issues"
+  },
+  "homepage": "https://github.com/rogerbf/nyheter#readme"
+}
